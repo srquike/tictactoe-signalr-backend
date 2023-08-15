@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToeSignalR.API", "TicTacToeSignalR.API.csproj", "{87FD2E64-19A5-4AC0-BE4E-4F3B001F84C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87FD2E64-19A5-4AC0-BE4E-4F3B001F84C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87FD2E64-19A5-4AC0-BE4E-4F3B001F84C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87FD2E64-19A5-4AC0-BE4E-4F3B001F84C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87FD2E64-19A5-4AC0-BE4E-4F3B001F84C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F4802214-91C5-41D5-A49D-8B383E925054}
+	EndGlobalSection
+EndGlobal
