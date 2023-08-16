@@ -4,11 +4,11 @@ namespace TicTacToeSignalR.API.Hubs
 {
     public class GameHub : Hub
     {
-        public async Task SelectSquare(string gameId, int selectedSquare, int move)
+        public async Task SelectSquare(string gameId, int selectedSquare, int move, string playerId)
         {
             try
             {
-                await Clients.Group(gameId).SendAsync("SelectedSquare", selectedSquare, move);
+                await Clients.Group(gameId).SendAsync("SelectedSquare", selectedSquare, move, playerId);
                 Console.WriteLine($"Se selecciono el {selectedSquare} cuadrado en el movimiento {move}.");
             }
             catch (Exception ex)
