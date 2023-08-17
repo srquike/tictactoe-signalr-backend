@@ -23,7 +23,7 @@ namespace TicTacToeSignalR.API.Hubs
             try
             {
                 await Groups.AddToGroupAsync(Context.ConnectionId, gameId);
-                await Clients.Group(gameId).SendAsync("join", player);
+                await Clients.Group(gameId).SendAsync("Joined", player);
                 Console.WriteLine($"El jugador {player} se unio");
             }
             catch (Exception ex)
