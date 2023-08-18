@@ -26,6 +26,15 @@ if (app.Environment.IsDevelopment())
     });
 }
 
+app.UseCors(options =>
+{
+    options
+        .WithOrigins("http://localhost:3000", "https://tictactoe-signalr-api-ab53-dev.fl0.io")
+        .AllowAnyHeader()
+        .AllowAnyMethod()
+        .SetIsOriginAllowed(allowed => true);
+});
+
 app.UseHttpsRedirection();
 
 app.MapHub<GameHub>("/hubs/game");
