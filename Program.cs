@@ -32,6 +32,7 @@ app.UseCors(options =>
         .WithOrigins("http://localhost:3000", "https://tictactoe-signalr-api-ab53-dev.fl0.io")
         .AllowAnyHeader()
         .AllowAnyMethod()
+        .AllowCredentials()
         .SetIsOriginAllowed(allowed => true);
 });
 
